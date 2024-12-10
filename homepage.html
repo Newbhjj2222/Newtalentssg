@@ -1,0 +1,1013 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Candal&family=Lora:ital,wght@0,400;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://www.gstatic.com/firebasejs/10.13.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.13.2/firebase-database.js"></script>
+    <title>NewtalentsG</title>
+</head>
+
+<body>
+    <div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v20.0&appId=1569938053563259" nonce="S28Vqfk7"></script>
+<style>
+    .theme {
+  top: 66px;
+  height: 64px;
+  width: 100%;
+  position: fixed;
+  display: flex;
+  margin-bottom: 43px;
+  z-index: 1000;
+  align-items: center;
+  cursor: pointer;
+</style>
+    <header>
+        <div>
+            <div class="logo">
+                <h1 class="logo text">
+                    <span>New</span><span>talents</span><span>G</span>
+                </h1>
+            </div>
+            <i class="fa fa-bars menu-toggle"></i>
+            <ul class="nav">
+                <li><a href="#" id="homepage.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="#">Service</a></li>
+              <li><a href="#" id="loginLink">Login</a></li>
+                <li>
+                   <a href="#">
+                <i class="fa fa-user"></i>
+                <span id="usernameDisplay">User Name</span>
+                <i class="fa fa-chevron-down" style="font-size: 0.8em" onclick="toggleDropdown()"></i>
+    
+            </a>
+                </li>
+            </ul>
+        </div>
+    </header>
+          <div class="theme">
+       <i class="fas fa-moon">theme</i>
+       <div class="customize-theme">
+            <div class="card">
+              <h1>Customer your view</h1>
+              <h3>Manage your font size, color and background </h3>
+<div class="font-size">
+    <h4>Font Size</h4>
+    <div class="size">
+   <h6>Aa</h6>
+    <div class="choose-size">
+      <span class="font-size-1"></span>
+      <span class="font-size-2"></span>
+      <span class="font-size-3"></span>
+      <span class="font-size-4"></span>
+      <span class="font-size-5"></span>
+    </div>
+     <h2>Aa</h2>
+ </div>
+  </div>
+  <div class="color">
+    <h4>Color</h4>
+    <div class="choose-color">
+      <span class="color-1"></span>
+      <span class="color-2"></span>
+      <span class="color-3"></span>
+      <span class="color-4"></span>
+      <span class="color-5"></span>
+    </div>
+  </div>
+       <div class="background">
+         <h4>Background</h4>
+         <div class="choose-bg">
+           <div class="bg-1">
+             <span></span>
+             <h1>draft</h1>
+           </div>
+           <div class="bg-2">
+             <span></span>
+             <h1>Dark</h1>
+           </div>
+           <div class="bg-3">
+             <span></span>
+             <h1>night</h1>
+           </div>
+         </div>
+       </div>
+            </div>
+       </div>
+         
+     </div>
+     <div class="screen">
+         <div class="logo">
+         <img src="pro11.png">
+       </div>
+      <div class="tv">
+            <p id="content">
+            
+            urakaze neza mu nkuru zuzuye ubutumwa bwagufasha kuba muri ubu buzima
+             📚</p>
+           
+            
+  
+</div>
+     
+     </div>
+     
+     
+     
+
+    <div class="page-wrapper">
+        <div class="post-slider">
+            <h1 class="slider-title">Trending Stories</h1>
+            <i class="fas fa-chevron-left prev"></i>
+            <i class="fas fa-chevron-right next"></i>
+            <div class="post-wrapper">
+                <div class="post">
+                    <img src="pro11.png"  class="slider-image">
+                    <div class="post-info">
+                        <h4><a href="">Inkuru ndende</a></h4>
+                        <i class="far fa-user">NewtalentsG</i>&nbsp;
+                        <i class="far fa-calendar">10/10/2024</i>
+                    </div>
+                </div>
+                <div class="post">
+                    <img src="/blog/new/pro11.jpeg"  class="slider-image">
+                    <div class="post-info">
+                        <h4><a href=""></a></h4>
+                        <i class="far fa-user"></i>&nbsp;
+                        <i class="far fa-calendar"></i>
+                    </div>
+                </div>
+                <div class="post">
+                    <img src="" class="slider-image">
+                    <div class="post-info">
+                        <h4><a href=""></a></h4>
+                        <i class="far fa-user"></i>&nbsp;
+                        <i class="far fa-calendar"></i>
+                    </div>
+                </div>
+                <div class="post">
+                    <img src="/blog/new/pro11.jpeg" class="slider-image">
+                    <div class="post-info">
+                        <h4><a href=""></a></h4>
+                        <i class="far fa-user"></i>&nbsp;
+                        <i class="far fa-calendar"></i>
+                    </div>
+                </div>
+                <div class="post clearfix">
+                    <img src="" class="slider-image">
+                    <div class="post-info">
+                        <h4><a href=""></a></h4>
+                        <i class="far fa-user"></i>&nbsp;
+                        <i class="far fa-calendar"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="slider">
+                <div class="slider-text">
+                    <span></span>
+                    
+                </div>
+            </div>
+        </div> <!-- Closing post-slider -->
+
+        <div class="content clearfix">
+          
+            <div class="maen-content">
+                <h7 class="recent-stories-title">Recent Stories</h7>
+               <div class="section-search search">
+  <h2 class="section-title">Search</h2>
+  <form action="homepage.html" method="post" id="search-form" onsubmit="return false;">
+    <input type="text" name="search-term" class="text-input" placeholder="Search stories..." oninput="searchPosts()">
+  </form>
+</div>
+                <!-- Main content -->
+            <div class="main-content single">
+                <h1 class="post-title">Mwihangane gato tuzane inkuru zose....</h1>
+                <div class="post-content">
+                  <!---- ahazajya post --->
+              <div class="post-img">
+              <!--- ahazagaragara ifoto--->
+              </div>
+                   
+                </div>
+            </div>
+            <!--// Main content -->
+                
+                
+            
+            </div> <!-- Closing main-content -->
+
+            <div class="sidebar">
+             <div class="fb-page" 
+     data-href="https://m.facebook.com/profile.php?id=100063727930149" 
+     data-tabs="" 
+     data-width="500" 
+     data-height="" 
+     data-small-header="false" 
+     data-adapt-container-width="true" 
+     data-hide-cover="false" 
+     data-show-facepile="true">
+  <blockquote cite="https://m.facebook.com/profile.php?id=100063727930149" 
+             class="fb-xfbml-parse-ignore">
+    <a href="https://m.facebook.com/profile.php?id=100063727930149">Navio nv</a>
+  </blockquote>
+</div>
+
+                <div class="section-topic">
+                    <h2>STORIES</h2>
+                    <ul id="topics-list">
+                     <li><a href="">inkuru ndende</a></li>
+                       
+                    </ul>
+                </div>
+            </div> <!-- Closing sidebar -->
+        </div> <!-- Closing content -->
+    </div> <!-- Closing page-wrapper -->
+<div class="notification-box" id="notificationBox">
+    <ul>
+        <li><h2>NewtalentsG</h2>notifications</li>
+    </ul>
+</div>
+
+
+  <div class="form-container" id="form-container">
+        <h2>WRITE YOUR STORY</h2>
+       <form id="stories" enctype="multipart/form-data">
+    <div class="form-group">
+        <label for="title">Title:</label>
+        <input type="text" id="head" name="name" required placeholder="Title of your story...">
+    </div>
+
+    <div class="form-group">
+        <label for="post_content">Description:</label>
+        <textarea id="story" name="post_content" placeholder="Write your story..."></textarea>
+    </div>
+
+    <div class="form-group" id="cover">
+        <label for="post_image">Cover picture:</label>
+        <input type="file" id="image" name="post_image" accept="image/*" required>
+    </div>
+
+    <select id="folderSelector">
+        <option value="">-- Choose a folder --</option>
+        <!-- Add options dynamically if needed -->
+    </select>
+
+    <div class="form-group">
+        <button type="submit" id="button">Publishing Post</button>
+    </div>
+</form>
+    </div>
+        </div>
+
+
+
+<div class="quick">
+  <ul>
+    <li><a href="homepage.html">
+                    <i class="fas fa-home home"></i>
+                </a></li>
+                <li><a href="#" id="create-post">
+   <i class="fas fa-plus"
+   onclick="togglePostForm(event)" id="writer"></i></a></li>
+  <li id="notificationItem">
+  <a href="#" id="notificationLink">
+    <i class="far fa-bell message" onclick="toggleNotifications(event)" id="noty"></i>
+    <span class="badge" id="notificationCount" style="position: absolute; background: crimson; color: white; padding: 2px 5px; border-radius: 50%; font-size: 12px; cursor: pointer;
+    display: none;">3+</span>
+  </a>
+</li>
+<li><a href="#" class="back-button"><i class="fab fa-dyalog back"></i></a></li>
+  </ul>
+</div>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section a">
+                <a href="homepage.html" class="footer-link">
+                    <i class="fas fa-home"></i> Home
+                </a>
+                <a href="#" class="footer-link">
+                    <i class="fas fa-user"></i> Profile
+                </a>
+                <a href="" class="footer-link">
+                    <i class="fas fa-wallet"></i> Check Balance
+                </a>
+            </div>
+
+            <div class="footer-section b">
+              <form action="#" class="subscribe-form" id="subscribeForm">
+  <input type="email" id="emailInput" placeholder="Enter your email" required>
+  <button type="submit">Subscribe</button>
+</form>
+            </div>
+
+            <div class="footer-section c">
+                <a href="https://chat.whatsapp.com/HTV7wUW2HTwD10A3R3BYhd" class="footer-icon">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+                <a href="https://x.com/talents_ne47935?t=jDGMu0CL_w9Myx_jc9P3Vw&s=09" class="footer-icon">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="https://www.facebook.com/profile.php?id=100063727930149&mibextid=ZbWKwL" class="footer-icon">
+                    <i class="fab fa-facebook"></i>
+                </a>
+                <a href="https://www.instagram.com/new_takents_stories_group?igsh=bmdrMmVxMDYwcnZz" class="footer-icon">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2024 New Talents | All Rights Reserved.
+        </div>
+    </footer>
+
+ <script type="module">
+    // Import Firebase modules
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.14.1/firebase-app.js";
+    import { getFirestore, collection, getDocs, doc, getDoc, addDoc, query, orderBy, limit, setDoc} from "https://www.gstatic.com/firebasejs/10.14.1/firebase-firestore.js";
+
+import { getMessaging, onMessage, getToken } from "https://www.gstatic.com/firebasejs/10.14.1/firebase-messaging.js";
+import { getStorage, ref, uploadBytes,getDownloadURL} from "https://www.gstatic.com/firebasejs/10.14.1/firebase-storage.js";
+    // Konfigura Firebase
+    const firebaseConfig = {
+        apiKey: "AIzaSyAvwNyhKiKFyI-r6MDDk7BH3iq7P61z594",
+        authDomain: "newtalents-a7c29.firebaseapp.com",
+        projectId: "newtalents-a7c29",
+        storageBucket: "newtalents-a7c29.appspot.com",
+        messagingSenderId: "507408992610",
+        appId: "1:507408992610:web:05ce220a4cb4922de9843b"
+    };
+
+    // Tangira Firebase App
+    const app = initializeApp(firebaseConfig);
+    const db = getFirestore(app);
+    const messaging = getMessaging(app);
+    const storage = getStorage(app);
+
+    // Fungura collection ya 'folders'
+    const foldersCollection = collection(db, 'folders');
+
+    // Fungura inyandiko za 'folders'
+    async function loadTopics() {
+        try {
+            const querySnapshot = await getDocs(foldersCollection);
+            const topicsList = document.getElementById('topics-list');
+            topicsList.innerHTML = '';  // Gusiba ibyari bihari mbere
+
+            querySnapshot.forEach((doc) => {
+                const listItem = document.createElement('li');
+                const link = document.createElement('a');
+                link.href = '#';  // Ushobora kongeraho link niba ihari
+                link.textContent = doc.data().title;  // Ufata content iri muri field 'title'
+
+                listItem.appendChild(link);
+                topicsList.appendChild(listItem);
+            });
+        } catch (error) {
+            console.error("Ikosa ryabaye: ", error);
+        }
+    }
+
+    // Fungura collection ya 'posts'
+    const postsCollection = collection(db, 'posts');
+
+    // Function ifata documents ziri muri collection ya 'posts'
+    
+        async function fetchPosts() {
+    try {
+        const recentPostsQuery = query(postsCollection, orderBy('createdAt', 'desc'), limit(5));
+        const querySnapshot = await getDocs(recentPostsQuery);
+
+        let postsHtml = '';
+        let postContainer = document.querySelector('.post-wrapper');
+        postContainer.innerHTML = ''; // Gukuraho content ya mbere
+
+        // Iterating over each document
+        querySnapshot.forEach((doc) => {
+            const postData = doc.data();
+            const postElement = `
+                <div class="post" style="display: inline-block; width: 100%;" onclick="openPost('${doc.id}')">
+                    <img src="${postData.imageUrl}" alt="${postData.head}" style="width: 100%; height: 200px; border-radius: 28px 8px 0 0;" class="slider-image"/>
+                    <div class="post-info">
+                        <h4><a href="#">${postData.head}</a></h4>
+                        <i class="far fa-user"></i>&nbsp;
+                        <span>${postData.author || "NewtalentsG"}</span>
+                        <i class="far fa-calendar">${postData.createdAt ? new Date(postData.createdAt).toLocaleDateString() : 'No date available'}</i>
+                    </div>
+                </div>
+            `;
+                postContainer.innerHTML += postElement;
+            });
+
+            // Kwambara slick carousel
+            $('.post-wrapper').slick({
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 3000,
+                nextArrow: $('.next'),
+                prevArrow: $('.prev'),
+                responsive: [
+                    {
+                        breakpoint: 1024,
+                        settings: {
+                            slidesToShow: 3,
+                            slidesToScroll: 3,
+                            infinite: true,
+                            dots: true
+                        }
+                    },
+                    {
+                        breakpoint: 600,
+                        settings: {
+                            slidesToShow: 2,
+                            slidesToScroll: 2
+                        }
+                    },
+                    {
+                        breakpoint: 480,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1
+                        }
+                    }
+                ]
+            });
+        } catch (error) {
+            console.error("Error fetching posts: ", error);
+        }
+    }
+
+    // Fungura document ya post imwe
+  // Function yo gufata post imwe
+// Function yo kubika comment muri Firestore
+async function addComment(postId, username, comment) {
+    try {
+        if (!postId || !comment || !username) {
+            console.error("Post ID, username and comment text cannot be empty.");
+            return;
+        }
+
+        const commentsRef = collection(db, "posts", postId, "comments");
+
+        await addDoc(commentsRef, {
+            username: username,
+            text: comment, // Hano hakoreshwa comment, ntabwo commentData.text
+            createdAt: new Date() // Shyiramo isaha
+        });
+        
+        console.log("Comment added successfully.");
+    } catch (error) {
+        console.error("Error adding comment: ", error);
+        alert("Icyo gikorwa kiranze: " + error.message);
+    }
+}
+// Function yo gufata post imwe
+async function fetchSinglePost(postId) {
+    try {
+        const postRef = doc(db, "posts", postId);
+        const postSnapshot = await getDoc(postRef);
+
+        if (postSnapshot.exists()) {
+            const postData = postSnapshot.data();
+
+            // Shyiramo igice cyo kwandika comments
+            document.querySelector(".main-content").innerHTML = `
+                <div class="post" id="${postId}">
+                    <h1 class="post-title">${postData.head || 'Untitled Post'}</h1>
+                    <div class="post-content" style="line-height: 1.6; margin-bottom: 16px; gap: 12px;">
+                       <p>${postData.post || postData.story || 'No content available.'}</p>
+                    </div>
+                    <div class="post-img">
+                        <img src="${postData.imageUrl}" alt="${postData.head}" style="width: 90%; height: auto; border-radius: 14px;" />
+                    </div>
+                    <div class="comments-section" style="display: flex; flex-direction: column; gap: 10px;">
+                        <h3>Comments:</h3>
+                        <div class="comments-list" id="comments-list"></div>
+                        <textarea id="comment-input" style="border-radius: 12px;  margin-top: 30px;" placeholder="Write your comment..."></textarea>
+                        <button id="submit-comment" style="background: blue; color: white; border-radius: 12px;">Submit Comment</button>
+                    </div>
+                </div>
+            `;
+
+            // Kora kuri button yo gushyira comment
+            document.getElementById("submit-comment").addEventListener("click", async () => {
+                const commentInput = document.getElementById("comment-input");
+                const commentText = commentInput.value;
+
+                const username = document.getElementById("usernameDisplay").textContent; // Fata izina ry'umukoresha
+
+                // Andika comment
+                await addComment(postId, username, commentText); // Ohereza izina ry'umukoresha hamwe na comment
+                commentInput.value = ''; // Hagarika comment input
+                loadComments(postId); // Tangira kugaragaza comments nyuma yo kongeramo
+            });
+
+            loadComments(postId); // Kora kuri comments nyuma yo kwerekana inyandiko
+        } else {
+            console.log("No such document!");
+            document.querySelector(".main-content").innerHTML = `<p>No post found with the specified ID.</p>`;
+        }
+    } catch (error) {
+        console.error("Error fetching post:", error);
+    }
+}
+
+// Function yo gufata comments
+async function loadComments(postId) {
+    try {
+        const commentsRef = collection(db, "posts", postId, "comments");
+        const querySnapshot = await getDocs(commentsRef);
+        const commentsList = document.getElementById("comments-list");
+        commentsList.innerHTML = ''; // Fata ibiri mu comments list
+
+        querySnapshot.forEach((doc) => {
+            const commentData = doc.data();
+            commentsList.innerHTML += `
+                <div class="comment">
+                    <p><strong>${commentData.username}</strong>: ${commentData.text}</p>
+                    <small>${commentData.createdAt.toDate().toLocaleString()}</small>
+                </div>
+            `;
+        });
+     } catch (error) {
+        console.log("Error loading comments: ", error);
+        alert("Hari ikibazo mu gihe cyo kubona comments: " + error.message); // Tangaza impamvu itabitswe
+    }
+}
+
+
+
+
+// Function yo gufata posts zose hamwe na "Read More"
+async function loadRecentStories() {
+    try {
+        // Gushyiraho query ishingiye ku miterere ya createdAt kugera kuz'ejyanye na post nshya
+        const recentPostsQuery = query(postsCollection, orderBy('createdAt', 'desc'));
+        const querySnapshot = await getDocs(recentPostsQuery);
+        
+        let postsHtml = '';
+
+        for (const doc of querySnapshot.docs) {  // Nta foreach irimo
+            const postData = doc.data();
+            const postId = doc.id;
+
+            // Reba niba createdAt iriho kandi ari Timestamp, niba itariho igaragaze igihe kitazwi
+            let createdAt = 'Unknown date';
+            if (postData.createdAt) {
+                createdAt = postData.createdAt;
+            }
+
+            // Reba niba izina ry'umwanditsi ririho, niba ntaryo, rigaragaze ko atazwi
+            const author = postData.author || 'NewtalentsG';
+
+            // Irinde ibishobora gutera HTML injection, ugire data yawe neza
+            const sanitizedHead = sanitizeHtml(postData.head);
+            const sanitizedPost = sanitizeHtml(postData.post || postData.story);
+
+            postsHtml += `
+                <div class="post" id="${postId}">
+                    <h1 class="post-title">${sanitizedHead}</h1>
+                    <div class="post-content">
+                        <p>${sanitizedPost.substring(0, 200)}...</p>
+                    </div>
+                    <div class="post-img">
+                        <img src="${postData.imageUrl}" alt="${sanitizedHead}" style="width: 89%; height: auto; border-radius: 14px;"/>
+                    </div>
+                    <div class="post-info">
+                        <p><strong>Written by:</strong> ${author}</p>
+                        <p><strong>Date:</strong> ${createdAt}</p>
+                    </div>
+                    <button class="read-more" style='background: blue; border-radius: 12px; color: white;' data-id="${postId}">Read More</button>
+                      <button class="share" style='background: green; border-radius: 12px; color: white;' data-id="${postId}">Share</button>
+                </div>
+            `;
+        }
+
+
+// Event listener ku button ya share ifite class ya "share"
+document.addEventListener("click", function(event) {
+    if (event.target.classList.contains("share")) {
+        const postId = event.target.getAttribute("data-id");
+        sharePost(postId);
+    }
+});
+
+// Function yo gusangiza cyangwa gukora copy kuri clipboard
+async function sharePost(postId) {
+    // Fata amakuru ya post
+    const postElement = document.getElementById(postId);
+    const head = postElement.querySelector(".post-title").innerText;
+    const postContent = postElement.querySelector(".post-content p").innerText;
+    const postUrl = window.location.href + "#" + postId; // Link ya post yihariye
+
+    if (navigator.share) {  // Reba niba Web Share API ishigikiwe
+        try {
+            await navigator.share({
+                title: head,
+                text: `${postContent}\n\n${postUrl}`,
+                url: postUrl
+            });
+            console.log("Post yasangijwe neza!");
+        } catch (error) {
+            console.error("Gusangiza ntibyashobotse:", error);
+        }
+    } else {
+        // Niba Web Share API idashyigikiwe, kora copy kuri clipboard cyangwa fungura link ya Facebook
+        const shareText = `${head}\n\n${postContent}\n\nLink: ${postUrl}`;
+        try {
+            await navigator.clipboard.writeText(shareText);  // Copy title, content, na link kuri clipboard
+            alert("Ibyo gusangiza byakozweho copy kuri clipboard!");
+        } catch (error) {
+            console.error("Gukora copy ntibyashobotse:", error);
+            alert("Igikoresho cyawe ntabwo gishyigikira Clipboard API.");
+        }
+
+        // Fungura link ya Facebook
+        const facebookShareUrl = `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(postUrl)}&quote=${encodeURIComponent(head)}`;
+        window.open(facebookShareUrl, '_blank');
+    }
+}
+
+        // Shyira posts mu gice cyagenwe
+        document.querySelector('.main-content.single').innerHTML = postsHtml;
+
+        // Ongera ushyireho event listener ku batoni
+        // Select and handle 'Read More' buttons
+// Gufata original content mbere yo gukanda kuri 'read more'
+// Gufata original content mbere yo gukanda kuri 'read more'
+// Kubika kopi ya original content ya document body
+// Kubika original content
+// Kubika content ya mbere nk'initial state
+// Kubika content ya mbere nk'initial state
+let initialContent = document.body.innerHTML;
+let currentContent = initialContent;
+let backButtonListener; // Kubika listener
+let observer; // Kubika observer
+
+function attachReadMoreListeners() {
+  const readMoreButtons = document.querySelectorAll('.read-more');
+  readMoreButtons.forEach(button => {
+    button.addEventListener('click', async (event) => {
+      const postId = event.currentTarget.getAttribute('data-id');
+      if (postId) {
+        try {
+          // Kubika content ya none imbere yo kwinjira muri post nshya
+          currentContent = document.body.innerHTML;
+          await fetchSinglePost(postId);
+          // Kongera gushyira event listener kuri 'Back' button nyuma yo kubikora
+          attachBackButtonListener();
+          observeFooter();
+        } catch (error) {
+          console.error('Error fetching post:', error);
+        }
+      } else {
+        console.error('Data-id attribute not found');
+      }
+    });
+  });
+}
+
+
+function attachBackButtonListener() {
+  const backButton = document.querySelector('.back-button');
+
+  // Kureka listener irimo
+  if (backButtonListener) {
+    backButton.removeEventListener('click', backButtonListener);
+  }
+
+  backButtonListener = (event) => {
+    event.preventDefault();
+    // Gusubiza current content muri DOM (content yari ihari mbere y'uko 'read more' button ikandwa)
+    document.body.innerHTML = currentContent;
+
+    // Gushyira event listeners zose kuri 'read more' na 'back' buttons
+    attachReadMoreListeners();
+    attachBackButtonListener();
+    observeFooter();
+  };
+
+  if (backButton) {
+    backButton.addEventListener('click', backButtonListener);
+  }
+}
+
+
+
+// Kwita kuri 'read-more' buttons bwa mbere
+attachReadMoreListeners();
+// Kwita kuri 'Back' button bwa mbere
+attachBackButtonListener();
+// Kwita kuri footer bwa mbere
+observeFooter();
+    } catch (error) {
+        console.error("Error loading recent stories: ", error);
+    }
+}
+
+// Iyi function ikora sanitize ya HTML, ikirinda injection mu izina ry'inkuru no muri post.
+function sanitizeHtml(unsafeHtml) {
+    const tempDiv = document.createElement('div');
+    tempDiv.textContent = unsafeHtml;
+    return tempDiv.innerHTML;
+}
+
+// Banza uhamagare iyi function kugirango ushireho posts mu ntangiriro
+loadRecentStories();
+
+    // Fungura function ya ads
+    async function displayAdsInSlider() {
+        const adRef = collection(db, "ads");
+        const adsSnapshot = await getDocs(adRef);
+        const sliderTextDiv = document.querySelector(".slider-text");
+        const adSpan = sliderTextDiv.querySelector("span");
+        
+        adSpan.innerHTML = ''; 
+
+        adsSnapshot.forEach(doc => {
+            const ad = doc.data();
+            adSpan.innerHTML += `${ad.ad} `;
+        });
+    }
+
+    // Hamagara functions
+    document.addEventListener('DOMContentLoaded', () => {
+        loadTopics();
+        fetchPosts();
+        loadRecentStories();
+        displayAdsInSlider();
+    });
+    document.getElementById('loginLink').addEventListener('click', function(event) {
+        event.preventDefault();  // Banza wirinde ko link ifungura uko isanzwe
+        window.location.href = 'index.html';  // Fungura login.html
+    });
+
+document.addEventListener("DOMContentLoaded", () => {
+    // Get the username from localStorage
+    const username = localStorage.getItem('username');
+    
+    // Ahari 'Login' link hazahita hiyongeramo 'Logout' igihe username ibonetse
+    if (username) {
+        document.getElementById("usernameDisplay").textContent = username;
+        
+        // Hindura 'Login' button ikaba 'Logout'
+        const loginLink = document.getElementById("loginLink");
+        loginLink.textContent = "Logout";
+        loginLink.href = "#";
+        loginLink.addEventListener("click", () => {
+            // Gusiba username muri localStorage no gukora logout
+            localStorage.removeItem('username');
+            window.location.reload(); // Reload page to reset the state
+        });
+    } else {
+        document.getElementById("usernameDisplay").textContent = "Guest";
+    }
+});
+
+
+// Fungura connection na database (urugero)
+// Fungura connection na database (urugero)
+
+document.getElementById('subscribeForm').addEventListener('submit', async function(event) {
+    event.preventDefault();
+    const emailInput = document.getElementById('emailInput').value;
+
+    try {
+        const subscriberRef = doc(collection(db, "subscriber"));
+        await setDoc(subscriberRef, {
+            email: emailInput, // Hano dukoresheje emailInput
+            createdAt: new Date().toISOString()
+        });
+        alert('Email subscribe successfully!');
+        document.getElementById('emailInput').value = ''; // Guhindura umwanya w'input
+        displayEmail();
+    } catch (error) {
+        console.error('Error to subscribe: ', error);
+        alert('Error to subscribe: ' + error.message);
+    }
+});
+
+// Function to load and display notifications in the notification box
+// Function to load and display notifications in the notification box
+async function displayNotificationsInBox() {
+  try {
+    // Reba collection ya "Notifications"
+    const notifyRef = collection(db, "Notifications");
+    const notifySnapshot = await getDocs(notifyRef);
+
+    // Fata notification box na notification count badge muri HTML
+    const notificationBox = document.querySelector("#notificationBox ul");
+    const notificationCount = document.querySelector("#notificationCount");
+    notificationBox.innerHTML = ''; // Gusiba notifications zishaje
+
+    // Umubare wa notifications
+    const notificationCountValue = notifySnapshot.docs.length;
+
+    // Reba niba hari notifications zishya kandi zitarasomwa
+    if (notificationCountValue > 0 && !localStorage.getItem("notificationsRead")) {
+      // Set notification count value
+      notificationCount.innerText = notificationCountValue;
+      notificationCount.style.display = "inline"; // Yerekana badge ya count
+    } else {
+      notificationCount.style.display = "none"; // Niba nta notifications cyangwa zarasomwe, yihishe
+    }
+
+    // Gushyira notifications nshya muri notification box
+    notifySnapshot.docs.forEach(doc => {
+      const notification = doc.data();
+      const createdAtFormatted = notification.createdAt ? new Date(notification.createdAt).toLocaleString() : "";
+      
+      const listItem = document.createElement("li");
+      listItem.innerHTML = `
+        <h2>${notification.name}</h2>
+        <p>${notification.info}</p>
+        <small>${createdAtFormatted}</small>
+      `;
+      notificationBox.appendChild(listItem);
+    });
+
+  } catch (error) {
+    console.error("Error fetching notifications: ", error);
+    alert("Error fetching notifications: " + error.message);
+  }
+}
+
+// Function to toggle visibility of notifications box and mark as read
+function toggleNotifications(event) {
+  event.preventDefault();
+  const notificationBox = document.querySelector("#notificationBox");
+
+  // Toggle notification box visibility
+  notificationBox.style.display = notificationBox.style.display === "none" || notificationBox.style.display === "" ? "block" : "none";
+
+  // Mark notifications as read and hide badge if notifications are shown
+  if (notificationBox.style.display === "block") {
+    localStorage.setItem("notificationsRead", "true"); // Bika ko zasomwe muri localStorage
+    document.querySelector("#notificationCount").style.display = "none"; // Hide badge
+  }
+}
+
+// Call the function to display notifications and set count
+displayNotificationsInBox();
+
+
+// Fata ibintu byose biri muri class ya 'quick'
+const quickElements = document.querySelectorAll('.quick');
+
+// Fungura footer
+const footer = document.querySelector('footer');
+
+// Fungura observer ikurikirana igihe footer igeze cyangwa ivuye mu ishusho
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            // Igihe footer igeze mu ishusho, hisha ibintu bya 'quick'
+            quickElements.forEach(element => element.style.display = 'none');
+        } else {
+            // Igihe footer ivuye mu ishusho, garura ibintu bya 'quick'
+            quickElements.forEach(element => element.style.display = '');
+        }
+    });
+});
+
+// Tangira gukurikirana footer
+observer.observe(footer);
+
+
+async function fetchScreensData() {
+    const tvElement = document.getElementById("content");
+
+    if (!tvElement) {
+        console.error("Element with id 'content' not found in the document.");
+        return; // Stop function if element does not exist
+    }
+
+    try {
+        const querySnapshot = await getDocs(collection(db, "screens")); // Await inside async function
+        const contents = []; // Array to hold each piece of content
+
+        querySnapshot.forEach((doc) => {
+            const data = doc.data(); // Get document data
+            
+            // Extract content, excluding date and ID
+            const contentField = data.content || "No content found";
+            contents.push(`<p>${contentField}</p>`); // Wrap content in a <p> tag for animation
+        });
+
+        if (contents.length === 0) {
+            tvElement.innerHTML = "<p>New talents stories group, amamaza aha. twandikire kuri whatsapp 0722319367</p>";
+        } else {
+            // Function to display one content at a time
+            let currentIndex = 0;
+
+            function displayContent() {
+                tvElement.innerHTML = contents[currentIndex]; // Display the current content
+                currentIndex = (currentIndex + 1) % contents.length; // Move to the next, loop back if at end
+            }
+
+            // Start the slideshow
+            displayContent(); // Display the first content immediately
+            setInterval(displayContent, 18000); // Change content every 10 seconds (same as CSS animation)
+        }
+    } catch (error) {
+        tvElement.innerHTML = "Error fetching data: " + error.message;
+    }
+}
+
+// Call the function to load data
+fetchScreensData();
+
+
+async function fetchFolders() {
+       const folderSelector = document.getElementById('folderSelector');
+       try {
+           const querySnapshot = await getDocs(collection(db, "folders"));
+           querySnapshot.forEach((doc) => {
+               const folderData = doc.data();
+               const option = document.createElement("option");
+               option.value = doc.id;
+               option.textContent = folderData.title;
+               folderSelector.appendChild(option);
+           });
+       } catch (error) {
+           console.error("Error fetching folders: ", error);
+       }
+   }
+
+   fetchFolders();
+
+   //* post //
+   
+async function handlePostSubmit(event) {
+    event.preventDefault();
+    const title = document.getElementById('head').value;
+    const content = document.getElementById('story').value;
+    const file = document.getElementById('image').files[0];
+    const selectedFolder = document.getElementById('folderSelector').value;  // Folder watoranyije
+
+    // Fata izina rya author muri localStorage
+    const author = localStorage.getItem("username");  // Izina rya author ryabitse muri localStorage
+    // Genzura niba ifoto yatowe
+    if (!file) {
+        alert('Please select an image file.');
+        return;
+    }
+
+    // Genzura niba umutwe n'ibisobanuro byuzuye
+    
+    try {
+        // Bika ifoto muri Firebase Storage
+        const storageRef = ref(storage, `amafoto/${file.name}`);
+        const snapshot = await uploadBytes(storageRef, file);
+        console.log('Amafoto abitswe neza!');
+        
+        // Fata URL y'aho amafoto abitswe
+        const url = await getDownloadURL(storageRef);
+
+        // Bika URL muri Firestore
+        const newPostsRef = doc(collection(db, "posts"));
+        await setDoc(newPostsRef, {
+            head: title,
+            story: content,
+            imageUrl: url, // Bika URL y'ifoto muri database
+            folderId: selectedFolder,  // Fata folder watoranyije
+            author: author,  // Bika izina rya author
+            createdAt: new Date().toISOString()
+        });
+
+        alert('Post saved successfully!');
+document.getElementById('stories').reset();
+window.location.href = 'homepage.html'; // Reba niba "posts" ari izina ry'ikibuga
+        displayPosts(); // Fungura uburyo bwo kugaragaza izo posts
+    } catch (error) {
+        console.error('Error saving post: ', error);
+        alert('Error saving post: ' + error.message);
+    }
+}
+document.getElementById("stories").addEventListener("submit", handlePostSubmit);
+
+</script>
+
+
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"
+        integrity="sha512-U6K1YLIFUWcvuw5ucmMtT9HH4t0uz3M366qrF5y4vnyH6dgDzndlcGvH/Lz5k8NFh80SN95aJ5rqGZEdaQZ7ZQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="script.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-auth.js"></script>
+</body>
+                      </html>
